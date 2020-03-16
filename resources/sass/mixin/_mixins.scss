@@ -1,0 +1,39 @@
+@mixin post-section-dash {
+
+	&:before {
+		background: $color__text-light;
+		content: "\020";
+		display: block;
+		height: 2px;
+		margin: $size__spacing-unit 0;
+		width: 1em;
+	}
+}
+
+/**-keyframes-animation*/
+@mixin keyframes($animation-names) {
+	@-webkit-keyframes $animation-name{
+		@content;
+	}
+	@-moz-keyframes $animation-name{
+		@content;
+	}
+	@keyframes $animation-name{
+		@content;
+	}
+}
+
+@mixin  animation($str) {
+	-webkit-animation: #{$str};
+}
+
+/**-width*/
+@mixin jsc-width($w: 10) {
+	width: #{$w}rem !important;
+}
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}

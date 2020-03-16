@@ -1,0 +1,145 @@
+@media (min-width: 1200px){
+	.container-lg-w12 {
+	    max-width: 1200px;
+	}
+}
+// @media screen and (max-width: 782px){}
+@media (max-width: 768px) {
+	.hidden-sm{
+		display: none;
+	}
+	#jsc_admin_menu_wrap.jsc-sidebar{
+		height: 100%;
+		overflow-y: scroll;
+		top:50px;
+	}
+	.jsc-minibar .top-nav{
+		margin-left: 0;
+	}
+	#jsc_content_wrap .jsc-primary-site-wrap,
+	#jsc_content_footer{
+		margin: 10px 15px 0 15px;
+	}
+
+	/**Mobile-used*/
+	.jsc-rwd-sidebar{
+		#jsc_nav{
+			position: relative;
+			margin-left:-999px;
+			opacity: 0;
+			z-index: 99;
+		}
+		#jsc_content_wrap, #jsc_content_footer{
+			margin-left: 0 !important;
+		}
+		#jsc_content_wrap{
+			.jsc-primary-site{
+				padding-left: 0px !important;
+				padding-top: 15px !important;
+			}
+		}
+		#jsc_admin_menu_wrap, #jsc_admin_menu_bg{
+			width: 100% !important;
+			.nav-link{
+				font-size: 14px !important;
+				text-align: center;
+				padding: 0.5rem 0.5rem;
+				line-height: 1.5;
+				> i{
+					font-size: 20px !important;
+					display: block;
+					margin-bottom: 8px;
+					margin-top: 8px;
+				}	
+			}
+		}
+		#jsc_close_nav{
+			position: absolute;
+			top: 15px;
+			right: 14px;
+			> i{
+				color: $color__background-body;
+				font-size: 21px;
+				line-height: 1.5;
+			}
+		}
+	}
+	/**scroll*/
+	#jsc_nav{
+		.mini-sidebar{
+			#jsc_admin_menu_wrap, #jsc_admin_menu_bg{
+				height: 100%;
+				overflow-y: scroll;				
+			}
+		}
+	}
+
+	
+	.jsc-content {
+			margin: 55px auto 0;
+			padding: 25px 25px 1px;
+			max-width: 100%;
+			overflow-x: visible;
+	}
+
+	/**profile*/
+	.jsc-infoWrap{
+		.nav-pills{
+			.nav-link.active,
+			.show > .nav-link{
+				border-bottom-color: $color_salmon;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.hidden-xs{
+		display: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	.hidden-lg{
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	/**default*/
+	.hidden-md{
+		display: none;
+	}
+	/**top-navigation*/
+	.top-nav{
+		margin-left: 240px;
+	}
+
+	/**profile*/
+	.jsc-infoWrap{
+		// .col-md-2{
+		// 	flex: 0 0 13.3333333333%;
+		// 	max-width: 13.3333333333%;
+		// }
+		// .col-md-10{
+		// 	flex: 0 0 86.6666666667%;
+		// 	max-width: 86.6666666667%;
+		// }
+		.nav-pills{
+			&.nav:after{
+				content: '';
+				display: block;
+				position: absolute;
+				height: 100%;
+				width: 1px;
+				background: $color_mercury;
+				right: 1px;
+			}
+			.nav-link.active,
+			.show > .nav-link{
+				border-right-color: $color_salmon;
+			}
+    }
+	}
+}
+

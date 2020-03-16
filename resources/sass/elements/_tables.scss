@@ -1,0 +1,22 @@
+//Table
+.jsc-table{
+	.table-heading{
+		margin-bottom: 1rem;
+	}
+	.table-title{
+    color: #6c757d;
+    font-family: 'segoe-bold';
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .table-action{
+    opacity: 0;   
+    visibility:hidden;
+  }
+  .visible{
+    opacity: 1;
+    visibility:visible;
+  }
+}

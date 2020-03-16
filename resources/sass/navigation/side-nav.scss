@@ -1,0 +1,111 @@
+#jsc_admin_menu_wrap, #jsc_admin_menu_bg{
+    background-color: $color__background-body;
+    overflow: hidden;
+    width: 240px;	
+}
+#jsc_admin_menu_bg{
+    position: fixed;
+    top: 0;
+    bottom: -120px;
+    z-index: 1;
+}
+#jsc_admin_menu_wrap{
+    position: relative;
+		float: left;
+		top:0;
+    z-index: 1000;
+    .nav{
+	    padding:0;
+	    margin:10px 0 10px;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+			user-select: none;
+			.submenu{
+				background-color: $color_san_juan;
+				margin:0;
+			}
+	    // .show{
+	    // }
+    }
+	.nav-link {
+	    color: #616161;
+	    &:hover,
+			&.active,
+			&[aria-expanded="true"]{
+	    	// background-color: $color_black_squeeze;
+	    	background-color: rgba(75, 134, 180, 0.2);
+	    	color:#464545;
+	    	i{
+	    		color: $color_cornflower_blue;
+	    	}
+	    }
+	}
+
+	//Submenu
+	.submenu{
+		.nav-link{
+			color: $color__text-cc;
+			&.active,
+			&:hover,
+			&:active{
+				color: $color__background-body;
+			}
+		}
+	}
+}
+/*-Sticky-menu*/
+.sticky-menu{
+	#jsc_admin_menu_wrap{
+		position: fixed;
+	}
+}
+
+/*-side-logo*/
+.jsc-site-logo{
+	background-color:$color_steel_blue;
+	padding: 8px 20px 8px;
+	margin: auto;
+	a{
+		&.navbar-brand{
+			color:$color__background-body;
+			font-size: 21px;
+			line-height: 1.5;
+		}
+	}
+}
+
+/*-mini-sidebar*/
+#jsc_nav{
+	&.mini-sidebar{
+		#jsc_admin_menu_wrap, #jsc_admin_menu_bg{
+			width: 75px;
+		}
+		.jsc-site-logo{
+			padding: 8px 7px;
+			> a{
+				font-size: 20px;
+				margin: 0;
+			}
+		}
+		.nav-link{
+			font-size: 11px;
+			text-align: center;
+			padding: 0.5rem 0.5rem;
+			line-height: 1.5;
+			> i{
+				font-size: 14px;
+				display: block;
+				margin-bottom: 5px;
+				margin-top: 5px;
+			}	
+		}
+	}
+}
+
+/**Mini-sidebar*/
+.jsc-minibar{
+	#jsc_content_wrap, #jsc_content_footer,.top-nav{
+		margin-left: 75px;
+	}
+}

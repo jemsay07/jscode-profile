@@ -1,0 +1,68 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: $color__border-button;
+	border-radius: 3px;
+	background: $color__background-button;
+	color: rgba(0, 0, 0, .8);
+	@include font-size(0.75);
+	line-height: 1;
+	padding: .6em 1em .4em;
+
+	&:hover {
+		border-color: transparent;
+	}
+
+	&:active,
+	&:focus {
+		border-color: transparent;
+	}
+}
+
+/**Custom-family*/
+.btn-segoe-bold{
+	font-family: "segoe-bold";
+	@include font-size(0.75);
+	text-transform: uppercase;
+}
+/**Custom-outline-color*/
+.btn-outline-salmon{
+  border-color:$color_salmon;
+  color:$color_salmon;
+  &:hover{
+		background-color: $color_salmon;
+		border-color:$color_salmon;
+    color: $color__background-body;
+	}
+	&:focus{border-color:$color_salmon;}
+	&:focus, &.focus{
+		box-shadow: 0 0 0 0.2rem rgba(254, 138, 113, 0.5);
+	}
+	&:not(:disabled):not(.disabled):active,
+	&:not(:disabled):not(.disabled).active,
+	&.dropdown-toggle{
+		background-color: $color_salmon;
+		border-color:$color_salmon;
+    color: $color__background-body;
+	}
+	&:not(:disabled):not(.disabled):active:focus,
+	&:not(:disabled):not(.disabled).active:focus{
+		box-shadow: 0 0 0 0.2rem rgba(254, 138, 113, 0.5);		
+	}
+}
+.btn-editor-post-featured_img{
+	border: 1px dashed #a2aab2;
+	background-color: #edeff0;
+	line-height: 20px;
+	padding: 8px 0;
+	text-align: center;
+	&:hover{
+		background-color: #f8f9f9;
+		border-color: $color_san_juan;
+	}
+}
+.btn-editor-post-featured_img{
+	transition: all ease 0.5s;
+}

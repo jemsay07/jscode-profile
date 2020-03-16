@@ -1,0 +1,26 @@
+#jsc_content_wrap,#jsc_content_footer{
+	margin-left: 240px;
+}
+#jsc_content_wrap{
+	height: 100%;
+	.jsc-primary-site{
+		padding-left: 20px;
+		padding-top: 30px;
+	}
+	.jsc-primary-site-wrap{
+		margin: 10px 20px 0 2px;
+	}
+}
+
+/**-Admin-profile*/
+@import 'admin-profile';
+
+/**-Admin-menu*/
+@import 'admin-menu';
+@import 'admin-profile';
+
+/**-Admin-media*/
+@import 'admin-media';
+
+/**-Admin-post-page*/
+@import 'admin-posts-page'

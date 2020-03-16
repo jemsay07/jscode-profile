@@ -1,0 +1,66 @@
+/**
+ * System Name: Sandbox.site
+ *
+ * Description: This is just for my portfolio
+ *
+ * Author: Jemson A. Sayre
+ *
+ * Author Link: github.com/jemsay07
+ */
+
+/**
+ * ======================================================================
+ * =========================	Table-of-contents	=====================
+ * ======================================================================
+ * # Variable
+ * # Elements
+ * # Mixins
+ * # Keyframes
+ * # Normalization
+ * # Navigation
+ * ## Top
+ * ## Side Navigation
+ * # Elements
+ * # Admin Content
+ * # Media
+ * ## Media Query
+ * ## Gallery
+ */
+
+
+/**==========Variables==========*/
+@import 'variables/variables';
+
+
+/**==========Mixins==========*/
+@import 'mixin/mixins';
+
+
+/**==========Keyframes==========*/
+@import 'mixin/key-frames';
+
+
+/**==========tools==========*/
+@import 'tools/loading';
+@import 'tools/default';
+
+
+
+/**==========Elements==========*/
+@import 'elements/elements';
+
+
+/**==========Forms==========*/
+@import 'forms/forms';
+
+
+/**==========Navigation==========*/
+@import 'navigation/navigation';
+
+
+/**==========Admin-Content=========*/
+@import 'admin/admins';
+
+
+/**==========Media=========*/
+@import 'media/media_query';

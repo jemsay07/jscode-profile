@@ -1,0 +1,51 @@
+.jsc-page-settings{
+  h1:not(.site-title):not(.page-heading):before, h2:before{
+		content: none;
+  }
+  .jsc-page-heading-wrap{
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    button{
+      color: $color_steel_blue;
+      margin: 0;
+      outline: none;
+      padding: 0.6rem 1.25rem;
+      text-align: left;
+      width: 100%;
+      &:hover,
+      &[aria-expanded="true"]{
+        background-color: #fbfbfb;
+        color: #0056b3;
+        border-radius: 0;
+        text-decoration: none;
+      }
+      &:active,&:focus{
+        text-decoration: none;
+      }
+    }
+  }
+  .jsc-page-content-wrap{
+    padding: 1rem 1.25rem;
+  }
+}
+
+
+/**modal*/
+#featImgModal{
+	.media-modal-close{
+		border-left-color: transparent;
+	}
+	.media-frame-content{
+		border-top-color: transparent;
+	}
+	.nav-tabs{
+		.nav-link.active,
+		.nav-item.show .nav-link{
+			background-color: $color__background-body;
+			border-bottom-color: transparent;
+		}
+	}
+	h1:not(.site-title):not(.page-heading):before, h2:before{
+		content: none;
+	}
+}
