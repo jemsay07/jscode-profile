@@ -28,6 +28,6 @@
         "sass-loader": "7.*"
     },
     "dependencies": {
-        "tinymce": "^5.2.0"
+        "tinymce": "^5.9.0"
     }
 }
